@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-[#F5FFF6] h-[100vh]">
     <header class=" border-2 border-red-500 min-h-[100px] max-w-[1920px] flex justify-between items-center bg-white mx-auto">
@@ -38,7 +40,7 @@
     <div class="border-2 border-yellow-500 max-h-[239px] max-w-[1920px]  bg-gradient-to-r from-[#013223] to-[#006747] text-center mx-auto">
     
         <div class=" text-white my-5">
-            <img src="./assets/logo.png" alt="" class="h-[92px] w-[92px] mx-auto">
+            <img src="./assets/logo-dark.png" alt="" class="h-[92px] w-[92px] mx-auto">
             <h1 class="font-bold text-[40px] p-2">Emergency Service Directory</h1>
             <p class="font-semibold text-[20px] ">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     
@@ -47,8 +49,43 @@
     </div>
     <main>
         <section id="emergency" class="w-11/12 mx-auto py-5 grid grid-cols-12 gap-4 max-h-[1140px] max-w-[1800px] ">
-            <section id="emergency-hotline" class="bg-orange-500 col-span-9 max-h-[1140px] max-w-[1370px]">
-                <h1>Number</h1>
+            <section id="emergency-hotline" class="grid grid-cols-3 col-span-9 max-h-[1140px] max-w-[1370px] gap-4 mx-auto">
+                <div id="first-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl">
+                    <div id="two-img" class="flex justify-between my-5 mx-5">
+                        <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center "><img src="./assets/emergency.png" alt="" class="h-[32px] w-[32px]"></div>
+                        <div class="flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
+                    </div>
+                    <div class="my-5 mx-5" >
+                        <h1 class="font-bold text-[24px]">National Emergency Number</h1>
+                        <p class="text-[18px] text-gray-500 ">National Emergency</p>
+                    <div class="py-3"><h1 class="font-extrabold text-[28px]">999</h1>
+                        <p class="bg-gray-200 rounded-3xl h-[37px] w-[53px]  text-center text-gray-500 py-1">All</p>
+                        
+                    </div>
+                        <div class="max-h-[40px] max-w-[372px] mx-auto">
+                        <button class="btn btn-copy min-h-[40px] min-w-[182px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
+                        <button class="btn btn-call min-h-[40px] min-w-[182px] text-white bg-[#00A63E] rounded-1xl "> <i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div id="Second-box" class="max-h-[360px] max-w-[436px] bg-white">
+                    <div id="two-img" class="flex justify-between gap-4">
+                        <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center "><img src="./assets/emergency.png" alt="" class="h-[32px] w-[32px]"></div>
+                        <div class="flex items-center justify-center  "><i class="fa-regular fa-heart"></i></div>
+                    </div>
+                    <div >
+                        <h1>National Emergency Number</h1>
+                        <p>National Emergency</p>
+                        <h1>999</h1>
+                        <p>All</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-copy bg-white"> <i class="fa-solid fa-copy"></i>Copy</button>
+                        <button class="btn btn-call"> <i class="fa-solid fa-phone"></i>Call</button>
+                    </div>
+                </div>
             </section>
 
             <section id="history" class="bg-red-500 col-span-3 max-h-[1140px] max-w-[400px]">
