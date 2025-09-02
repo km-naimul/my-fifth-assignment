@@ -23,24 +23,27 @@
 
         <div class="flex items-center h-[52px] md:w-[397px] mx-[60px]">
                     <div class="flex justify-center items-center md:min-h-[52px] min-w-[123px] bg-[#bcf4c8] rounded-4xl"> 
-                         <p class="text-[16px] font-extrabold">0</p>
-                         <img src="./assets/heart.png" alt="" class="h-[30px] w-[30px]">
+                         <p ><span id="heartCount" class="text-[16px] font-extrabold">0</span></p>
+                         <img src="./assets/heart.png" alt="" class="h-[30px] w-[30px] mx-[5px]">
                     </div>
                     <div class="flex justify-center items-center md:min-h-[52px] min-w-[123px] bg-[#bcf4c8] ml-3 rounded-4xl">
                         
-                        <p class="text-[16px] font-extrabold">100</p>
-                        <img src="./assets/coin.png" alt="" class="h-[30px] w-[30px]"> 
+                        <p><span id="coinCount" class="text-[16px] font-extrabold">100</span></p>
+                        <img src="./assets/coin.png" alt="" class="h-[30px] w-[30px] mx-[5px]"> 
                     </div>
-                    <div class="flex items-center ">
+
+                    <div class="flex items-center justify-center md:min-h-[52px] min-w-[123px] bg-[#00A63E] font-semibold text-white ml-3 rounded-4xl">
+                        <div><span id="copyCount" class="font-semibold text-[20px] ">0</span></div>
                         
-                        <button class="btn md:min-h-[52px] md:min-w-[127px] bg-[#00A63E] font-semibold text-white ml-3 rounded-4xl "> <span>2</span> Copy</button>
+                        <h1 class="font-semibold text-[20px] mx-[5px]">Copy</h1>
+                        
                     </div>
         </div>            
     </header>
     <div class=" max-w-[1920px] min-h-[239px]  bg-gradient-to-r from-[#013223] to-[#006747] text-center mx-auto">
     
         <div class=" text-white">
-            <img src="./assets/logo-dark.png" alt="" class="h-[92px] w-[92px] mx-auto">
+            <img src="./assets/logo-dark.png" alt="" class="h-[92px] w-[92px] mx-auto ">
             <h1 class="font-bold text-[40px] p-2">Emergency Service Directory</h1>
             <p class="font-semibold text-[20px] ">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     
@@ -49,184 +52,185 @@
     </div>
     <main>
         <section id="emergency" class="w-11/12 mx-auto py-5  grid grid-cols-1 md:grid-cols-12 gap-4 md:max-h-[1920px] md:max-w-[1800px] ">
-            <section id="emergency-hotline" class="grid grid-cols-1 md:grid-cols-3 col-span-9 md:max-h-[1920px] md:max-w-[1370px] gap-4 md:mx-auto">
-                <div id="first-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl ">
+            <section id="emergency-hotline" class="copy grid grid-cols-1 md:grid-cols-3 col-span-9 md:max-h-[1920px] md:max-w-[1370px] gap-4 md:mx-auto">
+                <div id="first-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl card">
                     <div id="two-img" class="flex justify-between my-7 mx-5">
                         <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center "><img src="./assets/emergency.png" alt="" class="h-[32px] w-[32px]"></div>
-                        <div class="flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
+                        
+                        <div class="heart flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
                     </div>
                     <div class="my-5 mx-5" >
                         <h1 class="font-bold text-[20px]">National Emergency Number</h1>
                         <p class="text-[18px] text-gray-500 ">National Emergency</p>
-                    <div class="py-3"><h1 class="font-extrabold text-[28px]">999</h1>
+                    <div class=" py-3"><h1 id="me1" class="co font-extrabold text-[28px]">999</h1>
                         <p class="bg-gray-200 rounded-3xl h-[37px] w-[53px]  text-center text-gray-500 py-1">All</p>
                         
                     </div>
                         <div class="max-h-[40px] max-w-[372px] mx-auto">
-                        <button class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
-                        <button class="btn btn-call min-h-[40px] min-w-[145px] text-white bg-[#00A63E] rounded-1xl "> <i class="fa-solid fa-phone"></i>Call</button>
+                        <button onclick="copyText(this)" class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
+                        <button class="btn btn-call min-h-[40px] min-w-[145px] text-white bg-[#00A63E] rounded-1xl "> <i class="fa-solid fa-phone"></i><span>Call</span></button>
                         </div>
                     </div>
                     
                 </div>
 
-                <div id="second-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl">
+                <div id="second-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl card">
                     <div id="two-img" class="flex justify-between my-7 mx-5">
                         <div class="bg-[#DFEFFF] rounded-2xl h-[60px] w-[60px] flex items-center justify-center "><img src="./assets/police.png" alt="" class="h-[32px] w-[32px]"></div>
-                        <div class="flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
+                        <div class="heart flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
                     </div>
                     <div class="my-5 mx-5" >
                         <h1 class="font-bold text-[20px]">Police Helpline Number</h1>
                         <p class="text-[18px] text-gray-500 ">Police</p>
-                    <div class="py-3"><h1 class="font-extrabold text-[28px]">999</h1>
+                    <div class="py-3"><h1 id="meTwo" class="co font-extrabold text-[28px]">999</h1>
                         <p class="bg-gray-200 rounded-3xl h-[37px] w-[79px]  text-center text-gray-500 py-1">Police</p>
                         
                     </div>
                         <div class="max-h-[40px] max-w-[372px] mx-auto">
-                        <button class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
+                        <button onclick="copyText()" class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
                         <button class="btn btn-call min-h-[40px] min-w-[145px] text-white bg-[#00A63E] rounded-1xl "> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                     
                 </div>
 
-                <div id="Third-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl">
+                <div id="Third-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl card">
                     <div id="two-img" class="flex justify-between my-7 mx-5">
                         <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center "><img src="./assets/fire-service.png" alt="" class="h-[32px] w-[32px]"></div>
-                        <div class="flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
+                        <div class="heart flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
                     </div>
                     <div class="my-5 mx-5" >
                         <h1 class="font-bold text-[20px]">Fire Service Number</h1>
                         <p class="text-[18px] text-gray-500 ">Fire Service</p>
-                    <div class="py-3"><h1 class="font-extrabold text-[28px]">999</h1>
+                    <div class="py-3"><h1 id="meThree" class="co font-extrabold text-[28px]">999</h1>
                         <p class="bg-gray-200 rounded-3xl h-[37px] w-[53px]  text-center text-gray-500 py-1">Fire</p>
                         
                     </div>
                         <div class="max-h-[40px] max-w-[372px] mx-auto">
-                        <button class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
+                        <button onclick="copyText()" class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
                         <button class="btn btn-call min-h-[40px] min-w-[145px] text-white bg-[#00A63E] rounded-1xl "> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                     
                 </div>
 
-                <div id="fourt-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl">
+                <div id="fourt-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl card">
                     <div id="two-img" class="flex justify-between my-7 mx-5">
                         <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center "><img src="./assets/ambulance.png" alt="" class="h-[32px] w-[32px]"></div>
-                        <div class="flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
+                        <div class="heart flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
                     </div>
                     <div class="my-5 mx-5" >
                         <h1 class="font-bold text-[20px]">Ambulance Service</h1>
-                        <p class="text-[18px] text-gray-500 ">Ambulance</p>
-                    <div class="py-3"><h1 class="font-extrabold text-[28px]">1994-999999</h1>
+                        <p class=" text-[18px] text-gray-500 ">Ambulance</p>
+                    <div class="py-3"><h1 id="meFour" class="co font-extrabold text-[28px]">1994-999999</h1>
                         <p class="bg-gray-200 rounded-3xl h-[37px] w-[83px]  text-center text-gray-500 py-1">Health</p>
                         
                     </div>
                         <div class="max-h-[40px] max-w-[372px] mx-auto">
-                        <button class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
+                        <button onclick="copyText(this)" class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
                         <button class="btn btn-call min-h-[40px] min-w-[145px] text-white bg-[#00A63E] rounded-1xl "> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                     
                 </div>
 
-                <div id="fifth-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl">
+                <div id="fifth-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl card">
                     <div id="two-img" class="flex justify-between my-7 mx-5">
                         <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center "><img src="./assets/emergency.png" alt="" class="h-[32px] w-[32px]"></div>
-                        <div class="flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
+                        <div class="heart flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
                     </div>
                     <div class="my-5 mx-5" >
                         <h1 class="font-bold text-[20px]">Women & Child Helpline</h1>
                         <p class="text-[18px] text-gray-500 ">Women & Child Helpline</p>
-                    <div class="py-3"><h1 class="font-extrabold text-[28px]">109</h1>
+                    <div class="py-3"><h1 id="meFive" class="co font-extrabold text-[28px]">109</h1>
                         <p class="bg-gray-200 rounded-3xl h-[37px] w-[53px]  text-center text-gray-500 py-1">Help</p>
                         
                     </div>
                         <div class="max-h-[40px] max-w-[372px] mx-auto">
-                        <button class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
+                        <button onclick="copyText()" class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
                         <button class="btn btn-call min-h-[40px] min-w-[145px] text-white bg-[#00A63E] rounded-1xl "> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                     
                 </div>
 
-                <div id="sixth-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl">
+                <div id="sixth-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl card">
                     <div id="two-img" class="flex justify-between my-7 mx-5">
                         <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center "><img src="./assets/emergency.png" alt="" class="h-[32px] w-[32px]"></div>
-                        <div class="flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
+                        <div class="heart flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
                     </div>
                     <div class="my-5 mx-5" >
                         <h1 class="font-bold text-[20px]"> Anti-Corruption Helpline</h1>
                         <p class="text-[18px] text-gray-500 "> Anti-Corruption</p>
-                    <div class="py-3"><h1 class="font-extrabold text-[28px]">106</h1>
+                    <div class="py-3"><h1 class="co font-extrabold text-[28px]">106</h1>
                         <p class="bg-gray-200 rounded-3xl h-[37px] w-[53px]  text-center text-gray-500 py-1">Govt.</p>
                         
                     </div>
                         <div class="max-h-[40px] max-w-[372px] mx-auto">
-                        <button class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
+                        <button onclick="copyText()" class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
                         <button class="btn btn-call min-h-[40px] min-w-[145px] text-white bg-[#00A63E] rounded-1xl "> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                     
                 </div>
 
-                <div id="seventh-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl">
+                <div id="seventh-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl card">
                     <div id="two-img" class="flex justify-between my-7 mx-5">
                         <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center "><img src="./assets/emergency.png" alt="" class="h-[32px] w-[32px]"></div>
-                        <div class="flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
+                        <div class="heart flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
                     </div>
                     <div class="my-5 mx-5" >
                         <h1 class="font-bold text-[20px]"> Electricity Helpline</h1>
                         <p class="text-[18px] text-gray-500 "> Electricity Outage</p>
-                    <div class="py-3"><h1 class="font-extrabold text-[28px]">16216</h1>
+                    <div class="py-3"><h1 class="co font-extrabold text-[28px]">16216</h1>
                         <p class="bg-gray-200 rounded-3xl h-[37px] w-[109px]  text-center text-gray-500 py-1">Electricity</p>
                         
                     </div>
                         <div class="max-h-[40px] max-w-[372px] mx-auto">
-                        <button class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
+                        <button onclick="copyText()" class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
                         <button class="btn btn-call min-h-[40px] min-w-[145px] text-white bg-[#00A63E] rounded-1xl "> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                     
                 </div>
 
-                <div id="eigth-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl">
+                <div id="eigth-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl card">
                     <div id="two-img" class="flex justify-between my-7 mx-5">
                         <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center "><img src="./assets/brac.png" alt="" class="h-[32px] w-[32px]"></div>
-                        <div class="flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
+                        <div class="heart flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
                     </div>
                     <div class="my-5 mx-5" >
                         <h1 class="font-bold text-[20px]"> Brac Helpline</h1>
                         <p class="text-[18px] text-gray-500 "> Brac
 
                         </p>
-                    <div class="py-3"><h1 class="font-extrabold text-[28px]">16445</h1>
+                    <div class="py-3"><h1 class="co font-extrabold text-[28px]">16445</h1>
                         <p class="bg-gray-200 rounded-3xl h-[37px] w-[69px]  text-center text-gray-500 py-1">NGO</p>
                         
                     </div>
                         <div class="max-h-[40px] max-w-[372px] mx-auto">
-                        <button class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
+                        <button onclick="copyText()" class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
                         <button class="btn btn-call min-h-[40px] min-w-[145px] text-white bg-[#00A63E] rounded-1xl "> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                     
                 </div>
 
-                <div id="ninth-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl">
+                <div id="ninth-box" class="max-h-[360px] max-w-[436px] bg-white rounded-xl shadow-2xl card">
                     <div id="two-img" class="flex justify-between my-7 mx-5">
                         <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex items-center justify-center "><img src="./assets/Bangladesh-Railway.png" alt="" class="h-[32px] w-[32px]"></div>
-                        <div class="flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
+                        <div class="heart flex items-center justify-center  mx-5"><i class="fa-regular fa-heart"></i></div>
                     </div>
                     <div class="my-5 mx-5" >
                         <h1 class="font-bold text-[20px]"> Bangladesh Railway Helpline </h1>
                         <p class="text-[18px] text-gray-500 "> Bangladesh Railway
                         </p>
-                    <div class="py-3"><h1 class="font-extrabold text-[28px]">163</h1>
+                    <div class="py-3"><h1 class="co font-extrabold text-[28px]">163</h1>
                         <p class="bg-gray-200 rounded-3xl h-[37px] w-[69px]  text-center text-gray-500 py-1">Travel</p>
                         
                     </div>
                         <div class="max-h-[40px] max-w-[372px] mx-auto">
-                        <button class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
+                        <button onclick="copyText()" class="btn btn-copy min-h-[40px] min-w-[145px] bg-white rounded-1xl"> <i class="fa-solid fa-copy"></i>Copy</button>
                         <button class="btn btn-call min-h-[40px] min-w-[145px] text-white bg-[#00A63E] rounded-1xl "> <i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
@@ -234,11 +238,13 @@
                 </div>
             </section>
 
-            <section id="history" class="bg-white shadow-2xl rounded-xl  col-span-3 min-h-[940px] md:max-w-[400px]">
+            <section id="history" class="bg-white shadow-2xl rounded-xl  col-span-3 min-h-[940px] w-[380px]">
                 <div class="flex justify-between items-center max-h-[52px] max-w-[352px] mx-[24px] mt-[24px]  ">
                     <div class="md:min-h-[28px] md:min-w-[128px] font-medium"><i class="fa-regular fa-clock"></i> <span>Call History</span></div>
-                    <button class="btn btn-active btn-success min-h-[52px] min-w-[114px] rounded-4xl text-white font-semibold text-1xl bg-[#00A63E]">Clear</button>
+                    <button id="btn-clear" class="btn md:min-h-[52px] md:min-w-[114px] bg-[#00A63E] font-semibold text-white ml-3 text-1xl rounded-4xl "> <span>Clear</span> </button>
+                               
                 </div>
+                <div id="call-log"></div>
             </section>
         </section>
     </main>
