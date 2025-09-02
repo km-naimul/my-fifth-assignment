@@ -30,6 +30,7 @@ Answer: To create and insert a new element into the DOM using these steps,
 3. What is **Event Bubbling** and how does it work?
 
 Answer: Write down event bubbling and how does it work,
+
         a)When we assign an event (like click) to any element, the event does not only work on that element. Instead, it starts from the inner element and spreads upward to the outer elements — this is called Event Bubbling.
 
         b) ---- It work -------
@@ -43,7 +44,9 @@ Answer: Write down event bubbling and how does it work,
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 
 Answer: Event Delegation is basically a pattern to handle events efficiently. Instead of adding an event listener to each and every similar element, we can add an event listener to a parent element and call an event on a particular target using the .target property of the event object.
+
 Is it useful because,
+
         a) Event Delegation is a useful pattern that allows you to write cleaner code, and create fewer event listeners with similar logic.
         b) Don't need many listener for many elements just one is enough.
         c)Very easy way to maintain.

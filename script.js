@@ -77,8 +77,7 @@ heartSpan.innerText = heartCount;
     hearts.forEach((heart) => {
       heart.addEventListener("click", () => {
         heartCount++;
-        heartSpan.innerText = heartCount;
-        localStorage.setItem("heartCount", heartCount);
+        heartSpan.innerText = heartCount;       
 });
     });
 
